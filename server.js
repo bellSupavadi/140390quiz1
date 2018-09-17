@@ -24,6 +24,14 @@ app.get('/', function(req, res) {
 
 //connection student
 app.get('/students', function(req, res) {
+    var mysql = require('mysql')
+
+var connection = mysql.createConnection({
+  host     : 'www.db4free.net',
+  user     : 's140390',
+  password : 'abc123**',
+  database : 'db140390'
+});
     
 connection.connect()
 
@@ -37,6 +45,14 @@ res.render('page/students',{students: rows});
 
 //connection subjects
 app.get('/subjects', function(req, res) {
+    var mysql = require('mysql')
+
+var connection = mysql.createConnection({
+  host     : 'www.db4free.net',
+  user     : 's140390',
+  password : 'abc123**',
+  database : 'db140390'
+});
     
     connection.connect()
     
