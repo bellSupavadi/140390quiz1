@@ -1,5 +1,5 @@
 var express = require('express');
-var pgp = require('pg-promise')();
+
 var app = express();
 var mysql = require('mysql')
 
